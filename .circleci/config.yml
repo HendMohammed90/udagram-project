@@ -5,7 +5,7 @@ version: 2.1
 # See: https://circleci.com/docs/2.0/orb-intro/
 orbs:
   node: circleci/node@4.7
-  aws-cli: circleci/aws-cli/1.23.4
+  # aws-cli: circleci/aws-cli/1.23.4
   eb: circleci/aws-elastic-beanstalk@2.0.1
 
 # Invoke jobs via workflows
