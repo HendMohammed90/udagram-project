@@ -1,6 +1,6 @@
 cd ./www
 eb init udagram-api2-dev --region $AWS_REGION --platform node.js
-# eb create
+eb create
 eb use udagram-api2-dev
 eb deploy udagram-api2-dev
 eb setenv  environment_name=udagram-api2-dev POSTGRES_HOST=$POSTGRES_HOST PORT=$PORT POSTGRES_USERNAME=$POSTGRES_USERNAME POSTGRES_PASSWORD=$POSTGRES_PASSWORD POSTGRES_DB=$POSTGRES_DB DB_PORT=$DB_PORT RDS_DIALECT=$RDS_DIALECT AWS_REGION=$AWS_REGION URL=$URL JWT_SECRET=$JWT_SECRET AWS_BUCKET=$AWS_BUCKET
