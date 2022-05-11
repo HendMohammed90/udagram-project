@@ -16,52 +16,42 @@ workflows:
     jobs:
       build:
         docker:
-          - image: alpine:3.15
+          - image: "cimg/base:stable"
+        executor: node/default
         steps:
+          - node/install
+          - checkout
+          - aws-cli/setup
+          - eb/setup
           - run:
-            name: The First Step
-            command: |
-              echo 'Hello World!'
-              echo 'This is the delivery pipeline'
-    # jobs:
-    #   build:
-    #     docker:
-    #       - image: "cimg/base:stable"
-    #     executor: node/default
-    #     steps:
-    #       - node/install
-    #       - checkout
-    #       - aws-cli/setup
-    #       - eb/setup
-    #       - run:
-    #           name: Back-End Install
-    #           command: |
-    #             npm run backend:install
-    #       - run:
-    #           name: Back-End Build
-    #           command: |
-    #             npm run backend:build
-    #       - run:
-    #           name: Back-End Deploy
-    #           command: |
-    #             npm run backend:deploy
-    #       - run:
-    #           name: Front-End Install
-    #           command: |
-    #             npm run frontend:install
-    #       - run:
-    #           name: Front-End Build
-    #           command: |
-    #             npm run frontend:build
-    #       - run:
-    #           name: Front-End Deploy
-    #           command: |
-    #             npm run frontend:deploy
-    # workflows:
-    #   udagram:
-    #     jobs:
-    #       - build:
-    #         filter:
-    #           branches:
-    #             only:
-    #               - master
+              name: Back-End Install
+              command: |
+                npm run backend:install
+          - run:
+              name: Back-End Build
+              command: |
+                npm run backend:build
+          - run:
+              name: Back-End Deploy
+              command: |
+                npm run backend:deploy
+          - run:
+              name: Front-End Install
+              command: |
+                npm run frontend:install
+          - run:
+              name: Front-End Build
+              command: |
+                npm run frontend:build
+          - run:
+              name: Front-End Deploy
+              command: |
+                npm run frontend:deploy
+    workflows:
+      udagram:
+        jobs:
+          - build:
+            filter:
+              branches:
+                only:
+                  - master
