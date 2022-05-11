@@ -11,9 +11,61 @@ This application is provided to you as an alternative starter project if you do 
 
 The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
 
+
+### Steps for Running Project Locally:
+Upload the code or clone the reposatory 
+Add .env file with with your variables
+    POSTGRES_HOST= **********
+    PORT=********
+    POSTGRES_USERNAME=********
+    POSTGRES_PASSWORD=********
+    POSTGRES_DB=********
+    DB_PORT=********
+    RDS_DIALECT=********
+    AWS_REGION=********
+    URL=********
+    JWT_SECRET=********
+    EB_APP=********
+    EB_ENV=********
+    AWS_BUCKET=********
+Then run npm install for both front and back , create your database then run the server and the clint side should route to localhost:4200
+
+
+http://elasticbeanstalk-us-east-1-446394258019.s3-website-us-east-1.amazonaws.com
+
+
+### to view your deployment on S3 [Front End Environment]
+S3 Bucket: `elasticbeanstalk-us-east-1-446394258019`
+S3 URL: 'http://elasticbeanstalk-us-east-1-446394258019.s3-website-us-east-1.amazonaws.com/'
+The Pic in DOC Folder
+
+### to view your deployment on Elastic Beanstalk [Back End Environment]
+Application Name: `udagram`  
+Enviroment Name: `udagram-api2-dev`
+URL: `http://udagram-api2-dev.us-east-1.elasticbeanstalk.com/`
+The Pic in DOC Folder
+
+
+###  to view your deployment on RDS Database [Datbase Environment]
+DB URL: `database-1.c2deshkx6ptb.us-east-1.rds.amazonaws.com`
+
+The Pic in the DOC Folder
+
+
+
+### Package.json SCRIPTS:
+
+  "backend:install": "cd udagram-api && npm install",
+  "frontend:install": "cd udagram-frontend && npm install",
+  "backend:build": "cd udagram-api && npm run build",
+  "frontend:build": "cd udagram-frontend && npm run build",
+  "backend:test": "cd udagram-api && npm run test",
+  "frontend:test": "cd udagram-frontend && npm run test",
+  "backend:deploy": "cd udagram-api && npm run deploy",
+  "frontend:deploy": "cd udagram-frontend && npm run deploy"
+
 ### Dependencies
 
-```
 - Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
 
 - npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
