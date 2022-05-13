@@ -11,7 +11,7 @@ export const sequelize = new Sequelize({
   // password : process.env.POSTGRES_PASSWORD,
   // database:process.env.POSTGRES_DB,
   // host:process.env.POSTGRES_HOST,
-  // port: Number(process.env.PORT),
+  // port: 5432,
   logging: false,
   dialect: "postgres",
   storage: ":memory:",
