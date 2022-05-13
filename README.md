@@ -50,8 +50,7 @@ The Pic in DOC Folder
 DB URL: `database-1.cw7cvla6dmvg.us-east-1.rds.amazonaws.com`
 
 The Pic in the DOC Folder
-![This is an image](Docs/RDS/Screen Shot 2022-05-13 at 4.58.07 PM.png)
-
+![This is an image](https://github.com/HendMohammed90/udagram-project/blob/1300db723e7b55bfd8afd6c42b61b167c95056bc/Docs/RDS/Screen%20Shot%202022-05-13%20at%204.58.07%20PM.png)
 
 
 ### Package.json SCRIPTS:
