@@ -7,5 +7,6 @@ eb deploy
 # eb use POSTGRES_HOST PORT POSTGRES_USERNAME POSTGRES_PASSWORD POSTGRES_DB DB_PORT AWS_REGION URL JWT_SECRET AWS_BUCKET
 # eb use udagram-api2-dev
 # eb deploy udagram-api2-dev RDS_DIALECT=$RDS_DIALECT
+#test
 
 
