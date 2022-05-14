@@ -5,10 +5,11 @@
 export const environment = {
   production: true,
   appName: "Udagram",
-  apiHost: "http://localhost:8080/api/v0",
+  apiHost: "http://udagram-api-devv.us-east-1.elasticbeanstalk.com/api/v0",
 };
-// http://udagram-api2-dev.us-east-1.elasticbeanstalk.com/
-// http://udagram-api2-dev.us-east-1.elasticbeanstalk.com:8080/api/v0
+
+// http://udagram-api-dev22222.us-east-1.elasticbeanstalk.com/
+// http://elasticbeanstalk-us-east-1-446394258019.s3-website-us-east-1.amazonaws.com/
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.

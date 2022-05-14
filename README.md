@@ -34,22 +34,21 @@ Then run npm install for both front and back , create your database then run the
 http://elasticbeanstalk-us-east-1-446394258019.s3-website-us-east-1.amazonaws.com
 
 
-### to view your deployment on S3 [Front End Environment]
+### to view deployment on S3 [Front End Environment]
 S3 Bucket: `udagram2`
-S3 URL: 'http://udagram2.s3-website-us-east-1.amazonaws.com/'
-The Pic in DOC Folder
-
-### to view your deployment on Elastic Beanstalk [Back End Environment]
-Application Name: `udagram`  
-Enviroment Name: `udagram-api2-dev`
-URL: `http://udagram-api2-dev.us-east-1.elasticbeanstalk.com/`
-The Pic in DOC Folder
+S3 URL: 'http://udagram2.s3-website-us-east-1.amazonaws.com'
 
 
-###  to view your deployment on RDS Database [Datbase Environment]
+### to view deployment on Elastic Beanstalk [Back End Environment]
+Application Name: `udagram-api`  
+Enviroment Name: `udagram-api-devv`
+URL: `http://udagram-api-devv.us-east-1.elasticbeanstalk.com/`
+![This is an image](https://github.com/HendMohammed90/udagram-project/blob/master/Docs/%20EB/Screen%20Shot%202022-05-14%20at%202.21.20%20PM.png)
+
+
+###  to view deployment on RDS Database [Datbase Environment]
 DB URL: `database-1.cw7cvla6dmvg.us-east-1.rds.amazonaws.com`
 
-The Pic in the DOC Folder
 ![This is an image](https://github.com/HendMohammed90/udagram-project/blob/1300db723e7b55bfd8afd6c42b61b167c95056bc/Docs/RDS/Screen%20Shot%202022-05-13%20at%204.58.07%20PM.png)
 
 
