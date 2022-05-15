@@ -1,0 +1,18 @@
+Serve & Build & Deployment Environment Requirements:
+
+    NodeJS v14.15.1 (LTS) or more recent.
+    npm 6.14.8 (LTS) or more recent
+
+AWS Requirements: 
+
+    AWS CLI 
+    AWS IAM User configure with permissions Administrator Access for deploying both front and back end apps
+    AWS RDS database running Postgres
+    AWS S3 bucket for hosting uploaded pictures
+    AWS Elastic Beanstalk Running Node.js 14 or more recent.
+
+CI/CD Pipeline:
+
+    CircleCi
+    GitHub Repo
+

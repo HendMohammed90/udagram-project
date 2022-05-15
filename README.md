@@ -94,42 +94,6 @@ DB URL: `database-1.cw7cvla6dmvg.us-east-1.rds.amazonaws.com`
 
 - A S3 bucket for hosting uploaded pictures.
 
-
-Serve & Build & Deployment Environment Requirements:
-
-    NodeJS v14.15.1 (LTS) or more recent.
-    npm 6.14.8 (LTS) or more recent
-
-AWS Requirements: 
-
-    AWS CLI 
-    AWS IAM User configure with permissions Administrator Access for deploying both front and back end apps
-    AWS RDS database running Postgres
-    AWS S3 bucket for hosting uploaded pictures
-    AWS Elastic Beanstalk Running Node.js 14 or more recent.
-
-CI/CD Pipeline:
-
-    CircleCi
-    GitHub Repo
-
-
-### infrastructure
-
-FrontEnd Environment: 
-    S3 BucketName: udagram2
-    S3 URL: http://udagram2.s3-website-us-east-1.amazonaws.com
-
-BackEnd Environment: 
-    DB ENDPOINT: database-1.cw7cvla6dmvg.us-east-1.rds.amazonaws.com
-    Application Name [EB_APP]: udagram-api
-    Environment Name [EB_ENV]: udagram-api-devv
-    EB URL: http://udagram-api-devv.us-east-1.elasticbeanstalk.com/
-
-Deployment Pipeline Environment:
-    CircleCi
-    GitHub Repo: https://github.com/HendMohammed90/udagram-project
-
 ```
 
 ### Installation
